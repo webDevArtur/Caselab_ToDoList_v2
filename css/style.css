@@ -1,0 +1,161 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    display: flex; /* Добавляем flex-контейнер */
+    align-items: center; /* Выравниваем элементы по центру вертикально */
+    justify-content: center; /* Выравниваем элементы по центру горизонтально */
+}
+
+h1 {
+    font-size: 3rem;
+    margin: 0;
+    text-shadow: 2px 2px 0 #555; /* Добавляем тень с разными уровнями яркости */
+    transition: font-size 1s; /* Добавляем плавный переход для свойства font-size */
+}
+
+h1:hover {
+    font-size: 4.5rem; /* Увеличиваем размер шрифта при наведении */
+}
+
+img {
+    width: 5em;
+    height: auto;
+    margin-left: 0;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2% 5%;
+}
+
+form {
+    width: 100%;
+    margin-top: 2%;
+    background-color: #f0f0f0;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.todo-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+input[type="text"], select {
+    padding: 1rem;
+    font-size: 1rem;
+    border: none;
+    border-bottom: 2px solid #4CAF50;
+    background-color: #f7f7f7;
+    color: #333;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+input[type="text"]:focus, select:focus {
+    outline: none;
+    border-bottom: 2px solid #4CAF50;
+}
+
+button {
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 100%;
+    transition: box-shadow 0.3s, transform 0.3s; /* Добавляем анимацию при наведении */
+}
+
+button:hover {
+    background-color: #45a049;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Изменяем тень при наведении */
+    transform: scale(1.01); /* Увеличиваем размер элемента при наведении */
+}
+
+
+ul {
+    list-style: none;
+    width: 100%;
+    padding: 0;
+}
+
+.todo-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin-top: 2%;
+    transition: box-shadow 0.3s, transform 0.3s; /* Добавляем анимацию при наведении */
+}
+
+.todo-item:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Изменяем тень при наведении */
+    transform: scale(1.02); /* Увеличиваем размер элемента при наведении */
+}
+
+
+.close {
+    color: #ff6b6b;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.close:hover {
+    color: #ff4242;
+}
+
+/* Медиа-запрос для мобильных устройств */
+@media (max-width: 767px) {
+    main {
+        padding: 5%;
+    }
+
+    .todo-form input[type="text"], .todo-form select {
+        padding: 1rem;
+        font-size: 1rem;
+        border: none;
+        border-bottom: 2px solid #4CAF50;
+        background-color: #f7f7f7;
+        color: #333;
+        margin-bottom: 1rem;
+        width: 100%;
+    }
+
+    .todo-form button {
+        cursor: pointer;
+        background-color: #4CAF50;
+        color: white;
+        padding: 1rem;
+        border: none;
+        border-radius: 5px;
+        font-size: 1.2rem;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+}
