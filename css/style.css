@@ -13,20 +13,20 @@ header {
     color: white;
     text-align: center;
     padding: 1rem 0;
-    display: flex; /* Добавляем flex-контейнер */
-    align-items: center; /* Выравниваем элементы по центру вертикально */
-    justify-content: center; /* Выравниваем элементы по центру горизонтально */
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
 }
 
 h1 {
     font-size: 3rem;
     margin: 0;
-    text-shadow: 2px 2px 0 #555; /* Добавляем тень с разными уровнями яркости */
-    transition: font-size 1s; /* Добавляем плавный переход для свойства font-size */
+    text-shadow: 2px 2px 0 #555; 
+    transition: font-size 1s; 
 }
 
 h1:hover {
-    font-size: 4.5rem; /* Увеличиваем размер шрифта при наведении */
+    font-size: 4.5rem; 
 }
 
 img {
@@ -84,13 +84,13 @@ button {
     border-radius: 5px;
     font-size: 1rem;
     width: 100%;
-    transition: box-shadow 0.3s, transform 0.3s; /* Добавляем анимацию при наведении */
+    transition: box-shadow 0.3s, transform 0.3s; 
 }
 
 button:hover {
     background-color: #45a049;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Изменяем тень при наведении */
-    transform: scale(1.01); /* Увеличиваем размер элемента при наведении */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transform: scale(1.01); 
 }
 
 
@@ -110,12 +110,12 @@ ul {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     margin-top: 2%;
-    transition: box-shadow 0.3s, transform 0.3s; /* Добавляем анимацию при наведении */
+    transition: box-shadow 0.3s, transform 0.3s; 
 }
 
 .todo-item:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Изменяем тень при наведении */
-    transform: scale(1.02); /* Увеличиваем размер элемента при наведении */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transform: scale(1.02); 
 }
 
 
