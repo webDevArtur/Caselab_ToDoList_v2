@@ -9,6 +9,9 @@
 - Работа с сервером.
 - Адаптивный интерфейс.
 
+![image](https://github.com/webDevArtur/Caselab_ToDoList_v2/assets/141954990/17d6dace-88c9-484a-9749-67d73a70e9b9)
+
+
 ## Ссылка на проект
 
 Ссылка на проект: https://webdevartur.github.io/Caselab_ToDoList_v2/
